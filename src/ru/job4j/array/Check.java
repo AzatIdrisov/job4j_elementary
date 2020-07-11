@@ -9,8 +9,6 @@ public class Check {
                 break;
             }
         }
-        /*        for () { */
-        /*        }        */
         return result;
     }
 }
