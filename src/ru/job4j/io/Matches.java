@@ -10,11 +10,7 @@ public class Matches {
         System.out.println("Количество спичек : " + matches);
         boolean player = true;
         while (matches > 0) {
-            if (player) {
-                System.out.println("Ходит первый игрок. Тяните спички");
-            } else {
-                System.out.println("Ходит второй игрок. Тяните спички");
-            }
+            System.out.println(String.format("Ходит %s игрок. Тяните спички", player ? "первый" : "второй"));
             matches -= Integer.valueOf(input.nextLine());
             if (matches <= 0 && player) {
                 System.out.println("Первый игрок выйграл!");
